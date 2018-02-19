@@ -22,17 +22,17 @@ import java.util.List;
 public class WeatherAdapter extends RecyclerView.Adapter<WeatherAdapter.ViewHolders> {
 
     private Context context;
-    List<WeatherModel.Weather> marketValueList;
+    List<WeatherModel> weatherValueList;
     private int lastPosition = -1;
 
-    public WeatherAdapter(Context context, List<WeatherModel.Weather> marketValueList) {
+    public WeatherAdapter(Context context, List<WeatherModel> marketValueList) {
         this.context = context;
-        this.marketValueList = marketValueList;
+        this.weatherValueList = weatherValueList;
     }
 
     @Override
     public WeatherAdapter.ViewHolders onCreateViewHolder(ViewGroup parent, int viewType) {
-        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.market_value_list_row, parent, false);
+        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.weather_value_row, parent, false);
 
         return new ViewHolders(itemView);
     }
@@ -40,9 +40,9 @@ public class WeatherAdapter extends RecyclerView.Adapter<WeatherAdapter.ViewHold
     @Override
     public void onBindViewHolder(WeatherAdapter.ViewHolders holder, int position) {
 
-        final WeatherModel.Weather weatherModel = marketValueList.get(position);
+        final WeatherModel weatherValue = weatherValueList.get(position);
 
-
+        holder.fullName.setText(weatherValue.getPlace());
 
 
 
@@ -58,7 +58,7 @@ public class WeatherAdapter extends RecyclerView.Adapter<WeatherAdapter.ViewHold
 
     @Override
     public int getItemCount() {
-        return marketValueList.size();
+        return weatherValueList.size();
     }
 
     @Override
@@ -75,7 +75,7 @@ public class WeatherAdapter extends RecyclerView.Adapter<WeatherAdapter.ViewHold
 
         public ViewHolders(View itemView) {
             super(itemView);
-            fullName = itemView.findViewById(R.id.full_name);
+            fullName = itemView.findViewById(R.id.one);
         }
     }
 }

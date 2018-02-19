@@ -50,7 +50,7 @@
                         android:textAlignment="center"
                         android:padding="10dp"
                         android:background="#28B463"
-                        android:text="District"
+                        android:text="आफ्नो जिल्ला रोज्नुहोस्"
                         android:textSize="20dp"
                         android:textColor="#fff"
                         />
@@ -83,7 +83,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="#28B463"
-                        android:text="manure"
+                        android:text="मलजल"
                         android:textSize="17dp"
                         android:textColor="#fff"/>
 
@@ -107,7 +107,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="#28B463"
-                        android:text="Feedback"
+                        android:text="पत्र पठाउनुहोस्"
                         android:textSize="17dp"
                         android:textColor="#fff"/>
 
@@ -137,7 +137,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="#28B463"
-                        android:text="Insurance"
+                        android:text="कृषि बीमा"
                         android:textSize="17dp"
                         android:textColor="#fff"/>
 
@@ -159,7 +159,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="#28B463"
-                        android:text="More"
+                        android:text="अन्य"
                         android:textSize="17dp"
                         android:textColor="#fff"/>
 

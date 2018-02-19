@@ -5,6 +5,7 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,18 +18,23 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.krishighar.R;
-import com.krishighar.adapter.WeatherAdapter;
+import com.krishighar.adapter.MarkertValueAdapter;
 import com.krishighar.constants.UrlConstants;
-import com.krishighar.model.WeatherModel;
+import com.krishighar.model.MarketValueModel;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.List;
 
 
 public class Weather extends Fragment {
+
     private RecyclerView recyclerView;
-    private List<WeatherModel.Weather> weatherModelList;
-    private WeatherAdapter weatherAdapter;
+    private List<MarketValueModel> marketValueList;
+    private MarkertValueAdapter markertValueAdapter;
 
 
     @Nullable
@@ -79,11 +85,12 @@ public class Weather extends Fragment {
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity());
         recyclerView.setLayoutManager(linearLayoutManager);
-        weatherModelList = new ArrayList<>();
-        weatherAdapter = new WeatherAdapter(getActivity(), weatherModelList);
-        recyclerView.setAdapter(weatherAdapter);
+        marketValueList = new ArrayList<>();
+        markertValueAdapter = new MarkertValueAdapter(getActivity(), marketValueList);
+        recyclerView.setAdapter(markertValueAdapter);
 
 
     }
+
 
 }

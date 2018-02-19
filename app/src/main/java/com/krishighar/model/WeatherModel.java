@@ -10,7 +10,13 @@ public class WeatherModel {
 
     private String status;
 
-    private List<Weather> weather = null;
+    private String place;
+
+    private String max;
+
+    private String min;
+
+    private String rain;
 
     public String getStatus() {
         return status;
@@ -20,66 +26,37 @@ public class WeatherModel {
         this.status = status;
     }
 
-    public List<Weather> getWeather() {
-        return weather;
+    public String getPlace() {
+        return place;
     }
 
-    public void setWeather(List<Weather> weather) {
-        this.weather = weather;
+    public void setPlace(String place) {
+        this.place = place;
     }
 
-    public static class Weather {
-
-
-        private String status;
-
-        private String place;
-
-        private String max;
-
-        private String min;
-
-        private String rain;
-
-        public String getStatus() {
-            return status;
-        }
-
-        public void setStatus(String status) {
-            this.status = status;
-        }
-
-        public String getPlace() {
-            return place;
-        }
-
-        public void setPlace(String place) {
-            this.place = place;
-        }
-
-        public String getMax() {
-            return max;
-        }
-
-        public void setMax(String max) {
-            this.max = max;
-        }
-
-        public String getMin() {
-            return min;
-        }
-
-        public void setMin(String min) {
-            this.min = min;
-        }
-
-        public String getRain() {
-            return rain;
-        }
-
-        public void setRain(String rain) {
-            this.rain = rain;
-        }
-
+    public String getMax() {
+        return max;
     }
+
+    public void setMax(String max) {
+        this.max = max;
+    }
+
+    public String getMin() {
+        return min;
+    }
+
+    public void setMin(String min) {
+        this.min = min;
+    }
+
+    public String getRain() {
+        return rain;
+    }
+
+    public void setRain(String rain) {
+        this.rain = rain;
+    }
+
+
 }

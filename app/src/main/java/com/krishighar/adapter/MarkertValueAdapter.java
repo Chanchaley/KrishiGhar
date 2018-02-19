@@ -44,6 +44,8 @@ public class MarkertValueAdapter extends RecyclerView.Adapter<MarkertValueAdapte
 
 
         holder.fullName.setText(marketValue.getName());
+        holder.priceName.setText(marketValue.getThokAverage());
+        holder.unitName.setText(marketValue.getUnit());
 
 
 
@@ -72,11 +74,15 @@ public class MarkertValueAdapter extends RecyclerView.Adapter<MarkertValueAdapte
     public class ViewHolders extends RecyclerView.ViewHolder {
 
         private TextView fullName;
+        private TextView priceName;
+        private TextView unitName;
 
 
         public ViewHolders(View itemView) {
             super(itemView);
             fullName = itemView.findViewById(R.id.full_name);
+            priceName = itemView.findViewById(R.id.price);
+            unitName = itemView.findViewById(R.id.unitt);
         }
     }
 }

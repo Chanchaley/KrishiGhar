@@ -12,6 +12,29 @@
         android:orientation="horizontal"
         android:background="@color/colorPrimary">
 
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:text="Hello"/>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:text="Hello"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:text="Hello"/>
+
     </LinearLayout>
 
     <android.support.v7.widget.RecyclerView

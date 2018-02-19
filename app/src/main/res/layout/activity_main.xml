@@ -13,10 +13,11 @@
         android:layout_height="?attr/actionBarSize"
         android:background="@color/colorPrimary"
         app:tabIndicatorColor="@color/colorselect"
-        app:tabIndicatorHeight="2dp"
+        app:tabIndicatorHeight="4dp"
         app:tabMode="fixed"
         app:tabSelectedTextColor="@color/colorselect"
         app:tabTextColor="#f4f4f4">
+
 
     </android.support.design.widget.TabLayout>
 
